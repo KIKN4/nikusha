@@ -1,0 +1,312 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 10px 50px;
+}
+
+.left-side {
+  flex: 2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.right-side {
+  flex: 1;
+}
+
+.fixed {
+  position: sticky;
+  top: 580px; /* Adjust this value based on your layout */
+  max-width: 100%;
+}
+
+.right-side-description {
+  position: absolute;
+}
+
+.calculator-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.summary {
+  margin-bottom: 1rem;
+}
+
+.total-price {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  border-color: #42a5f5;
+  box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+  outline: none;
+  resize: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button.btn-success {
+  width: 100%;
+  background-color: #28a745;
+  color: #fff;
+  margin-top: 20px;
+}
+
+button.btn-success.disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+  position: relative;
+}
+
+button.btn-success.disabled:hover::after {
+  content: "Please fill out all required fields which have '**' symbols";
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: 110%; /* Adjust this to position the tooltip above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 3.3rem;
+}
+
+.errorEntry {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+}
+
+.discountBtn {
+  width: 50%;
+}
+
+.frequency-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.frequency-buttons .btn {
+  flex: 1;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+.frequency-buttons .btn.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.bordered-group {
+  border-bottom: 1px dotted #ccc;
+  padding: 30px 10px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.typeRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.deep-cleaning-text {
+  color: red;
+}
+
+.flatpickr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-button {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* Custom styles for date and time inputs */
+.date-input,
+.time-input {
+  outline: none; /* Remove default outline */
+  border: 1px solid #42a5f5; /* Custom border color */
+  text-align: center; /* Center text */
+  border-radius: 4px; /* Adjust border-radius if needed */
+}
+
+.date-input:focus,
+.time-input:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+}
+
+/* Styles for disabled inputs */
+input.disabled {
+  cursor: not-allowed;
+  background-color: #e0dddd; /* Optional: change background color for disabled inputs */
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  background-color: #333333d5;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 70px;
+  // margin-left: 20px;
+  z-index: 5;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.address-flex {
+  flex: 3;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 3.3rem;
+}
+
+.formsGap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  border-color: #42a5f5;
+  box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+  outline: none;
+  resize: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+.form-group {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 3.3rem;
+}
+
+.formsGap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  border-color: #42a5f5;
+  box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+  outline: none;
+  resize: none;
+}
